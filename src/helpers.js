@@ -93,7 +93,7 @@ module.exports = {
             try {
                 childSocialHandles = Apify.utils.social.parseHandlesFromHtml(html, childParseData);
 
-                ['emails', 'phones', 'phonesUncertain', 'linkedIns', 'twitters', 'instagrams', 'facebooks'].forEach((field) => {
+                ['emails'].forEach((field) => {
                     socialHandles[field] = childSocialHandles[field];
                 });
             } catch (e) {
