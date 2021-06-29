@@ -102,7 +102,7 @@ module.exports = {
         });
 
 
-        ['emails', 'phones', 'phonesUncertain', 'linkedIns', 'twitters', 'instagrams', 'facebooks'].forEach((field) => {
+        ['emails'].forEach((field) => {
             socialHandles[field] = _.uniq(socialHandles[field]);
         });
 
