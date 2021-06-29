@@ -109,7 +109,7 @@ Apify.main(async () => {
             result.domain = await helpers.getDomain(result.url);
 
             // Extract and save handles, emails, phone numbers
-            const socialHandles = await Apify.utils.social.parseHandlesFromHtml(result.html);
+            const socialHandles = await Apify.utils.social.EMAIL_REGEX_GLOBAL(result.html);
 
             // Merge frames with main
             const mergedSocial = helpers.mergeSocial(frameSocialHandles, socialHandles);
