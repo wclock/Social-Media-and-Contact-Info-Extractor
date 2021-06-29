@@ -1,4 +1,4 @@
-const Apify = require('apify');
+const Apify = require('wclock');
 const _ = require('underscore');
 const domain = require('getdomain');
 
