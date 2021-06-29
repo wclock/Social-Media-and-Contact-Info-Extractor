@@ -1,4 +1,4 @@
-const Apify = require('apify');
+const Apify = require('wclock');
 const helpers = require('./helpers');
 
 const { log } = Apify.utils;
